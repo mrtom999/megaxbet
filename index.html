@@ -333,7 +333,8 @@
             try {
                 const response = await axios.post(`${MEGANODES_API_BASE}/game/game-url`, {
                     username: user,
-                    game_code: gameCode,
+                    game_symbol: gameCode,
+                    lang: "en",
                     currency: "BDT",
                     amount: balance
                 }, {
